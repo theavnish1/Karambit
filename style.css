@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: aliceblue;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(3, 1, 17);
+    position: relative;
+    overflow-x: hidden;
+    z-index: -100;
+}
+
+nav{
+    width: 100vw;
+    height: 9vh;
+}
+
+/* div{
+    border: 1px;
+    margin: 2px;
+    border-style: solid;
+    border-color: aliceblue;
+} */
+
+h2, p, h3{
+    color: aliceblue;
+    
+}
+
+h2{
+    letter-spacing: 3px;
+    font-size: 13.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-div{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.logo-div{
+    width: 30%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+/* 
+.hidden-nav{
+    width: 100vw;
+    height: 9vh;
+    display: none;
+    position: fixed;
+    background-color: rgb(4, 0, 48);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+
+}
+
+.sticky{
+    display: flex;
+    transition: all 0.5s ease-in-out;
+} */
+
+.nav-items{
+    width: 60%;
+    text-align: right;
+    font-size: 20px;
+}
+
+.nav-item{
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+}
+
+.cart-div{
+    width: 10%;
+}
+
+#logo{
+    height: 70px;
+}
+
+#cart{
+    filter: invert(70%);
+    height: 40px;
+    margin-left: 3%;
+}
+
+.hero{
+    height: 95vh;
+    width: 100vw;
+    position: relative;
+    background-image: url(img/bg.jpeg);
+    background-size: cover;
+    z-index: -2;
+    /* filter: brightness(40%); */
+}
+
+#hero-bg{
+    height: 95vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -2;
+}
+
+#karambit-div{
+    position: relative;
+
+}
+
+.karambit{
+    position: absolute;
+    z-index: -1;
+    bottom: 70px;
+    right: -100px;
+    /* transition: all 0.06s ease-in-out; */
+    transform: rotate(15deg);
+}
+
+.welcome-text{
+    margin: 15vh auto auto 10vw;
+    height: 15%;
+    width: 20%;
+}
+
+.arrow{
+    margin: auto 50% 5% 50%;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.bounce {
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 7px 14px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    top: 0;
+    animation: bounce 0.5s ease-out infinite alternate;
+    text-decoration: none;
+    cursor: default;
+}
+
+@keyframes bounce {
+    0%{
+      top: 0;
+      color: #fff;
+    }
+    100% {
+      top: 8px;
+      color: #e0e0e0;
+    }
+}
+
+.second-page{
+    min-width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    background-size: cover;
+}
+
+.left-div{
+    width: 50%;
+    height: 100%;
+}
+
+.hero-product{
+    position: relative;
+    height: 10%;
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.product-desc{
+    min-height: 70%;
+    width: 80%;
+    right: 0;
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.product-section {
+    height: 50.33vh;
+    display: flex;
+}
+
+
+
+
+.product-feature {
+
+    width: 60%;
+    height: 100%;
+}
+
+.product-feature hr{
+    opacity: 30%;
+    margin: 20px 0px 20px 0px;
+    margin-right: 90px;
+}
+
+.product-feature h4 {
+    font-size: 1.2rem;
+    /* margin-bottom: 40px; */
+}
+
+.product-feature h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+}
+
+.product-feature p {
+    /* font-size: 3rem; */
+    margin-bottom: 40px;
+
+}
+
+.more-btn{
+    height: 10%;
+    width: 30%;
+    /* position: relative; */
+    background: none;
+    border: 2px solid #ccc burlywood; 
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+}
+
+.right-div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.object-div{
+    height: 80%;
+    width: 45%;
+}
+
+.footer{
+    width: 100vw;
+    height: 40vh;
+}
+
+.footer-content{
+    display: flex;
+    height: 85%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.social{
+    height: 100%;
+    width: 40%;
+    position: relative;
+}
+
+.email{
+    position: relative;
+    height: 30%;
+    width: 90%;
+    top: 65%;
+    left: 5%;
+}
+
+.sitemap{
+    height: 100%;
+    width: 40%;
+}
+
+.footer-footer{
+    height: 15%;
+    width: 100%;
+}
