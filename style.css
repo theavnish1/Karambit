@@ -313,38 +313,70 @@ a{
     justify-content: center;
 }
 
-.footer{
-    width: 100vw;
-    height: 40vh;
+.social-page{
+  width: 50vw;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.footer-content{
-    display: flex;
-    height: 85%;
-    width: 100%;
-    justify-content: space-around;
+
+.social  h1{
+  font-size: 4rem;
 }
 
-.social{
-    height: 100%;
-    width: 40%;
-    position: relative;
+
+.icon-container{
+  /* margin-left: 40px; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.email{
-    position: relative;
-    height: 30%;
-    width: 90%;
-    top: 65%;
-    left: 5%;
+#icons{
+  font-size: 3.5rem;
+  letter-spacing: 2rem;
+  transition: 0.3s;
+  filter: invert(0.3);
 }
 
-.sitemap{
-    height: 100%;
-    width: 40%;
+#icons:hover{
+  scale: 1.5;
+  filter: invert(0);
 }
 
-.footer-footer{
-    height: 15%;
-    width: 100%;
+.mail {
+  width: 450px;
 }
+
+#mail-msg{
+  width: 450px;
+  border: 2px solid #e8e8e8;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #212121;
+  font-size: small;
+  font-weight: bold;
+}
+
+
+
+.input {
+  width: 450px;
+  border: 2px solid #e8e8e8;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #212121;
+  font-size: small;
+  font-weight: bold;
+ }
+ 
+ .input:focus {
+  outline-color: white;
+  background-color: #212121;
+  color: #e8e8e8;
+  box-shadow: 5px 5px #888888;
+ }
